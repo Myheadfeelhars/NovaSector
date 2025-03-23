@@ -1,3 +1,8 @@
+// Ghosts can't see smuggler's satchels
+/obj/item/storage/backpack/satchel/flat/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/undertile, TRAIT_T_RAY_VISIBLE, INVISIBILITY_MAXIMUM, use_anchor = TRUE)
+
 /obj/item/storage/backpack/satchel/flat/PopulateContents()
 	var/contraband_list = list(
 		/obj/item/storage/belt/utility/syndicate = 1,
