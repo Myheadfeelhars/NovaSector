@@ -507,7 +507,7 @@
 	var/list/obj/item/insert = list(
 		new /obj/item/gun/magic/wand/death(null),
 		new /obj/item/gun/magic/wand/resurrection(null),
-		new /obj/item/gun/magic/wand/fireball(src) // NOVA EDIT CHANGE - Trades polymorph for second fireball - ORIGINAL: new /obj/item/gun/magic/wand/polymorph(null),
+		new /obj/item/gun/magic/wand/fireball(null), // NOVA EDIT CHANGE - Trades polymorph for second fireball - ORIGINAL: new /obj/item/gun/magic/wand/polymorph(null),
 		new /obj/item/gun/magic/wand/teleport(null),
 		new /obj/item/gun/magic/wand/door(null),
 		new /obj/item/gun/magic/wand/fireball(null),

@@ -190,7 +190,7 @@
 		/obj/item/surgicaldrill,
 		/obj/item/cautery,
 		/obj/item/surgical_drapes,
-		/obj/item/clothing/suit/toggle/labcoat/nova/hospitalgown(src) //NOVA EDIT ADDITION
+		/obj/item/clothing/suit/toggle/labcoat/nova/hospitalgown, //NOVA EDIT ADDITION
 		/obj/item/clothing/mask/surgical,
 		/obj/item/blood_filter,
 	)

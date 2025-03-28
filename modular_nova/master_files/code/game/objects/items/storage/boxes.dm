@@ -5,18 +5,21 @@
 	desc = "A box of technological shells. These come unloaded and ready for custom shot loads."
 
 /obj/item/storage/box/techshell/PopulateContents()
+	. = list()
 	for(var/i in 1 to 7)
-		new /obj/item/ammo_casing/shotgun/techshell(src)
+		. += /obj/item/ammo_casing/shotgun/techshell
 
 /obj/item/storage/box/lewd_toys
 	name = "lewd toys box"
 	desc = "Contains lewd impliments for spending time alone, or together with someone! Try to hide it better next time."
 
 /obj/item/storage/box/lewd_toys/PopulateContents()
-	new /obj/item/clothing/sextoy/dildo(src)
-	new /obj/item/clothing/sextoy/buttplug(src)
-	new /obj/item/stack/shibari_rope/full(src)
-	new /obj/item/spanking_pad(src)
-	new /obj/item/clothing/mask/ballgag(src)
-	new /obj/item/clothing/suit/straight_jacket/shackles(src)
-	new /obj/item/clothing/glasses/blindfold/kinky(src)
+	return list(
+		/obj/item/clothing/sextoy/dildo,
+		/obj/item/clothing/sextoy/buttplug,
+		/obj/item/stack/shibari_rope/full,
+		/obj/item/spanking_pad,
+		/obj/item/clothing/mask/ballgag,
+		/obj/item/clothing/suit/straight_jacket/shackles,
+		/obj/item/clothing/glasses/blindfold/dorms,
+	)
